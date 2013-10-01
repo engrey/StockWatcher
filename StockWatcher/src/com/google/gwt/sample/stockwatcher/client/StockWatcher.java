@@ -49,8 +49,8 @@ public class StockWatcher implements EntryPoint {
 	private LoginInfo loginInfo = null;
 	  private VerticalPanel loginPanel = new VerticalPanel();
 	  private Label loginLabel = new Label("Please sign in to your Google Account to access the StockWatcher application.");
-	  private Anchor signInLink = new Anchor("Sign In");
-	  private Anchor signOutLink = new Anchor("Sign Out");
+	  private Anchor signInLink = new Anchor("Please Sign In");
+	  private Anchor signOutLink = new Anchor("Please Sign Out");
 	  private final StockServiceAsync stockService = GWT.create(StockService.class);
 
 	
@@ -88,12 +88,13 @@ public class StockWatcher implements EntryPoint {
 
 		// TODO Create table for stock data.  
 		stockList.setText(0,0, "Symbol");
-		stockList.setText(0,1, "Price");
+		stockList.setText(0,1, "Money");
 		stockList.setText(0,2, "Change");
 		stockList.setText(0,3, "Remove");
 		stockList.setText(0,4, "Chocolate");
 		stockList.setText(0,5, "Testing");
 		stockList.setText(0,6, "Hello");
+		stockList.setText(0,7, "This is another test!!");
 		
 		// Add styles to elements in the stock list table.
 		 stockList.setCellPadding(6);
