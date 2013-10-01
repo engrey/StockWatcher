@@ -91,6 +91,7 @@ public class StockWatcher implements EntryPoint {
 		stockList.setText(0,1, "Price");
 		stockList.setText(0,2, "Change");
 		stockList.setText(0,3, "Remove");
+		stockList.setText(0,4, "Sum");
 		
 		// Add styles to elements in the stock list table.
 		 stockList.setCellPadding(6);
